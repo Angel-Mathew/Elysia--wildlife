@@ -69,7 +69,62 @@ a place where they can meet and speak through emotion and action.
     <span className="label-text">ABOUT</span>
     <img src="/bird.png" alt="Bird" className="bird" />
     <img src="/about.png" alt="about" className="about" />
+  
+    <p className="about-text">             Welcome to Elysia. 
+Here you can explore information about various animals, birds, reptiles, and fish, 
+and even discover zoos, sanctuaries, or wildlife tourism spots where you can meet 
+them face-to-face. You can also share your own safari trips in 'My Journey'. 
+Note: You can post anything related to wildlife.</p>
   </div>
+  {/* Categories */}
+  <section id="Categories">
+     <div className="label-container2">
+       <img src="/label.png" alt="Label" className="label2" />
+    <span className="label-text2">Categories </span>
+    <img src="/rabbit.png" alt="rabbit" className="rabbit" />
+     </div>
+     {/*button for each categories */}
+     <div className="categories">
+       <div className="category">
+      <img
+        src="/prints (4).png"
+        alt="Animals"
+        className="category-btn"
+        onClick={() => window.location.href = "/animals"}
+      />
+      <span>Animals</span>
+    </div>
+    <div className="category">
+      <img
+        src="/prints (3).png"
+        alt="Birds"
+        className="category-btn"
+        onClick={() => window.location.href = "/birds"}
+      />
+      <span>Birds</span>
+    </div>
+    <div className="category">
+      <img
+        src="/prints (2).png"
+        alt="Reptiles"
+        className="category-btn"
+        onClick={() => window.location.href = "/reptiles"}
+      />
+      <span>Reptiles</span>
+    </div>
+    <div className="category">
+      <img
+        src="/prints (1).png"
+        alt="Fish"
+        className="category-btn"
+        onClick={() => window.location.href = "/fish"}
+      />
+      <span>Fish</span>
+    </div>
+  </div>
+  </section>
+    
+
 
 </main>
 

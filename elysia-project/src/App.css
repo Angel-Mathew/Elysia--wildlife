@@ -125,10 +125,12 @@ gap: 20px;
 }
 nav a.glow {
   color: #fff;
-  text-shadow: 0 0 28px #f9af03, 0 0 26px #ffa600, 0 0 24px #04666f;
+  text-shadow: 0 0 28px #f9af03, 0 0 26px #ffa600, 0 0 26px #ecab09;
   font-weight: bold;
 }
-
+nav a:hover {
+  color:#000000;
+}
 /* Gold opening on top-right */
 .gold {
   position: absolute;
@@ -151,12 +153,13 @@ nav a.glow {
   color: black;
   font-size: 21px;
   line-height: 1.4;
-  margin-top: -56%;
+  margin-top: -57%;
   margin-left: -9%;
   max-width: 28%;
   background-color: rgba(255, 255, 255, 0.6); /* optional for readability */
   padding: 20px;
   border-radius: 8px;
+  font-weight: bold;
 }
 
 .welcome {
@@ -170,8 +173,7 @@ nav a.glow {
   border-radius: 25px;
   box-shadow: #000000 0px 12px 18px -10px;
 }
-
-/* Label and Bird */
+/* About Section */
 .label-container {
   position: relative;
   width: 280px;
@@ -190,7 +192,7 @@ nav a.glow {
 
 .label-text {
   position: absolute;
-  top: 52%;
+  top: 205px;
   left: -155%;
   transform: translate(-50%, -50%);
   font-size: 25px;
@@ -203,10 +205,61 @@ nav a.glow {
 
 .bird {
   position: absolute;
-  top: 45%;     /* adjust vertically */
+  top: 175px;     /* adjust vertically */
   left: -130%;   /* adjust horizontally */
   width: 45px;  /* scale as needed */
   height: auto;
   z-index: 3;   /* above the label image */
 }
 
+.about{
+  margin-top: -60%;
+  
+}
+.about-text {
+  color: rgb(241, 241, 241);
+  font-size: 25px;
+  line-height: 1.4;
+  margin-top: -160%;
+  margin-left: -200%;
+  width: 150%;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 8px;
+}
+/*categories section*/
+.label-container2 {
+  position: relative;
+  width: 280px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.label2 {
+  width: 100%;
+  height: auto;
+  margin-top: -10%;
+  z-index: 1;
+  display: block;
+  margin-left: -200%;
+}
+.label-text2 {
+  position: absolute;
+  top: 205px;
+  left: -155%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+.rabbit {
+  position: absolute;
+  top: 9%;     /* adjust vertically */
+  left: -145%;   /* adjust horizontally */
+  width: 100%;  /* scale as needed */
+  height: auto;
+  z-index: 3;   /* above the label image */
+}
