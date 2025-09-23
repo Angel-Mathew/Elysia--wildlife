@@ -1,0 +1,212 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Full-page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("public/forestbg.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  background-color: #0B7A75; /* Fallback color */
+}
+
+/* Overlay for opacity */
+body::before {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  background: url("public/forestbg.png") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.25; /* 25% */
+  z-index: -1;
+}
+/* Header container */
+.header {
+  background-color: #0B7A75;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;   /* stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;       /* full width */
+  z-index: 10;
+  height: 200px;  /* adjust based on content */
+  box-shadow: #10e4da 0px 12px 20px -10px;
+  padding: 10px 20px; /* spacing inside */
+}
+
+/* Logo box with ribbon */
+.logo-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  height: 250px;
+  margin-right: 10px;
+  margin-top: -5%;
+}
+
+.ribbon {
+  position: absolute;
+  left: 18%;  /* adjust based on your ribbon PNG */
+  top: 5%;
+  height: 250px;
+  z-index: -2; /* behind text */
+}
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+.name {
+  font-family: 'Sail', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-left: 15px;
+  margin-top:-5%;
+}
+ 
+/* Navigation */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-family: "Sigmar One", sans-serif;
+text-align: center;
+justify-content: center;
+margin-left: -100%;
+margin-right: 100%;
+gap: 20px;
+
+}
+nav a.glow {
+  color: #fff;
+  text-shadow: 0 0 28px #f9af03, 0 0 26px #ffa600, 0 0 24px #04666f;
+  font-weight: bold;
+}
+
+/* Gold opening on top-right */
+.gold {
+  position: absolute;
+  top: -1px;
+  right: 30px;
+  height: 150px; 
+}
+/* Main content area */
+.main_image {
+ width: 129.3%;
+  height: auto;
+  margin-top: 15%; /* to avoid being hidden under the fixed header */
+  margin-left: -20%;
+  display: block;
+}
+
+
+
+.introduction {
+  color: black;
+  font-size: 21px;
+  line-height: 1.4;
+  margin-top: -56%;
+  margin-left: -9%;
+  max-width: 28%;
+  background-color: rgba(255, 255, 255, 0.6); /* optional for readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.welcome {
+ margin-left: -90%;
+
+  padding: 10px 25px;
+  font-size: 20px;
+  background-color: #526344;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: #000000 0px 12px 18px -10px;
+}
+
+/* Label and Bird */
+.label-container {
+  position: relative;
+  width: 280px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.label-img {
+  width: 100%;
+  height: auto;
+  margin-top: 90%;
+  z-index: 1;
+  display: block;
+  margin-left: -200%;
+}
+
+.label-text {
+  position: absolute;
+  top: 52%;
+  left: -155%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.bird {
+  position: absolute;
+  top: 45%;     /* adjust vertically */
+  left: -130%;   /* adjust horizontally */
+  width: 45px;  /* scale as needed */
+  height: auto;
+  z-index: 3;   /* above the label image */
+}
+
