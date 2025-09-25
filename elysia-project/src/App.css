@@ -355,8 +355,7 @@ nav a:hover {
 }
 .animals {
  
-  width: 100vw;  /* full width */
-  margin-left: calc(-49vw + 50%); /* center align */
+  width: 800%;
 }
 footer {
   position: relative;   /* change from fixed */
