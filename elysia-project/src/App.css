@@ -49,12 +49,12 @@ body {
   background-size: cover;
   position: relative;
   background-color: #0B7A75; /* Fallback color */
+  padding-bottom: 200px; /* space for footer */
 }
 
 /* Overlay for opacity */
 body::before {
-  
-  position: absolute;
+   position: absolute;
   top: 0;
   left: 0;
  
@@ -62,6 +62,7 @@ body::before {
   background-size: cover;
   opacity: 0.25; /* 25% */
   z-index: -1;
+  
 }
 /* Header container */
 .header {
@@ -262,4 +263,131 @@ nav a:hover {
   width: 100%;  /* scale as needed */
   height: auto;
   z-index: 3;   /* above the label image */
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px); /* fixed size grid cells */
+  grid-template-rows: repeat(2, 210px);
+  gap: 0;
+  justify-items: center;
+  margin-top: -20%;
+  margin-left: 25%;
+}
+
+.item {
+  position: relative;
+  cursor: pointer;
+  width: 180px;
+  height: 180px;
+}
+
+.prints {
+  width: 180%;
+  height: 180%;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
+
+}
+
+.item:hover .prints {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.name1 {
+  position: absolute;
+  top: 105%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+.name2 {
+  position: absolute;
+  top: 110%;
+  left: 89.5%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+.name3 {
+  position: absolute;
+  top: 96%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+.name4 {
+  position: absolute;
+  top: 96%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  font-family: "Sigmar One", sans-serif;
+  text-shadow: 0 0 10px black;
+  pointer-events: none; /* so clicks go through to the image */
+}
+
+
+/* footer */
+.design {
+  position: relative;
+  width: 100%;        /* same width as footer */
+  margin-left: 0;     /* reset */
+  display: flex;
+  justify-content: center; /* center animals */
+  
+}
+.animals {
+ 
+  width: 100vw;  /* full width */
+  margin-left: calc(-49vw + 50%); /* center align */
+}
+footer {
+  position: relative;   /* change from fixed */
+  margin-top: 1px; /* pull up to overlap design */
+  left: 0;
+  bottom: 0;
+   width: 99.5vw; /*add this to make full width*/
+  margin-left: calc(-50vw + 50%);
+  background-color: #0B7A75;
+  color: white;
+  text-align: center;
+  height: 200px; /* keep same height */
+  box-shadow: #10e4da 0px 12px 20px -10px;
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+ 
+}
+
+
+.footer-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+.footer-icon {
+  height: 150px;
+  align-items: left;
+  
+
+  
 }

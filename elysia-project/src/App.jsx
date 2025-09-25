@@ -84,46 +84,42 @@ Note: You can post anything related to wildlife.</p>
     <img src="/rabbit.png" alt="rabbit" className="rabbit" />
      </div>
      {/*button for each categories */}
-     <div className="categories">
-       <div className="category">
-      <img
-        src="/prints (4).png"
-        alt="Animals"
-        className="category-btn"
-        onClick={() => window.location.href = "/animals"}
-      />
-      <span>Animals</span>
+      {/* Grid of category buttons */}
+  <div className="categories-grid">
+    <div className="item" onClick={() => window.location.href = "/animals"}>
+      <img src="/prints (4).png" alt="Animals" className="prints" />
+      <span className="name1">Animals</span>
     </div>
-    <div className="category">
-      <img
-        src="/prints (3).png"
-        alt="Birds"
-        className="category-btn"
-        onClick={() => window.location.href = "/birds"}
-      />
-      <span>Birds</span>
+   <div className="item" onClick={() => window.location.href = "/reptiles"}>
+      <img src="/prints (3).png" alt="Reptiles" className="prints" />
+      <span className="name2">Reptiles</span>
     </div>
-    <div className="category">
-      <img
-        src="/prints (2).png"
-        alt="Reptiles"
-        className="category-btn"
-        onClick={() => window.location.href = "/reptiles"}
-      />
-      <span>Reptiles</span>
+    <div className="item" onClick={() => window.location.href = "/birds"}>
+      <img src="/prints (2).png" alt="Birds" className="prints" />
+      <span className="name3">Birds</span>
     </div>
-    <div className="category">
-      <img
-        src="/prints (1).png"
-        alt="Fish"
-        className="category-btn"
-        onClick={() => window.location.href = "/fish"}
-      />
-      <span>Fish</span>
+
+    
+
+    <div className="item" onClick={() => window.location.href = "/fishes"}>
+      <img src="/prints (1).png" alt="Fishes" className="prints" />
+      <span className="name4">Fishes</span>
     </div>
+
   </div>
   </section>
-    
+  {/* Footer Section */}
+  <div className="design">
+    <img src="/animals1.png" alt="animals1" className="animals" />
+    <img src="/animals2.png" alt="animals2" className="animals" />
+  </div>
+<footer>
+  
+  <div className="footer-text">
+   <img src="elysia.png" alt="Footer" className="footer-icon" />
+   <h3>contact:</h3>
+  </div>
+</footer>
 
 
 </main>
