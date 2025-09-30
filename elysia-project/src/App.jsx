@@ -24,6 +24,13 @@ function App() {
         >
           🐾 Categories
         </a>
+         <a
+          href="#Sightings"
+          className={glow === "#Sightings" ? "glow" : ""} // Apply glow class when the link is clicked
+          onClick={() => setGlow("#Sightings")}
+        >
+          🐾 Sightings
+        </a>
         <a
           href="#MyJourney"
           className={glow === "#MyJourney" ? "glow" : ""} // Apply glow class when the link is clicked
@@ -31,13 +38,7 @@ function App() {
         >
           🐾 My Journey
         </a>
-        <a
-          href="#Sightings"
-          className={glow === "#Sightings" ? "glow" : ""} // Apply glow class when the link is clicked
-          onClick={() => setGlow("#Sightings")}
-        >
-          🐾 Sightings
-        </a>
+       
       </nav>
 
       {/* Gold peel in top-right */}
@@ -108,16 +109,26 @@ Note: You can post anything related to wildlife.</p>
 
   </div>
   </section>
+  
+ 
   {/* Footer Section */}
   <div className="design">
     <img src="/animals1.png" alt="animals1" className="animals" />
     <img src="/animals2.png" alt="animals2" className="animals" />
   </div>
 <footer>
-  
-  <div className="footer-text">
    <img src="elysia.png" alt="Footer" className="footer-icon" />
-   <h3>contact:</h3>
+  <div className="footer-text">
+  <h2>Contacts:</h2>
+   <h3>
+    <a href="https://www.instagram.com/elysia_wildlife/" target="_blank" rel="noopener noreferrer" style={{color:"black"}}>Instagram</a> |
+    <a href="https://www.facebook.com/elysiawildlife" target="_blank" rel="noopener noreferrer" style={{color:"black"}}> Facebook</a> |
+    <a href="https://Youtube.com/elysia_wildlife" target="_blank" rel="noopener noreferrer" style={{color:"black"}}> YouTube</a> |
+    <a href="https://www.linkedin.com/in/elysia-wildlife-123456789/" target="_blank" rel="noopener noreferrer" style={{color:"black"}}> LinkedIn</a>|
+    <a href="https://www.email.com/in/elysia-wildlife-123456789/" target="_blank" rel="noopener noreferrer" style={{color:"black"}}> email</a>|
+    <a href="https://www.whatsapp.com/elysia_wildlife/" target="_blank" rel="noopener noreferrer" style={{color:"black"}}> Whatsapp</a>
+   </h3>
+    <h3>© 2025 Elysia. All rights reserved.</h3>
   </div>
 </footer>
 
