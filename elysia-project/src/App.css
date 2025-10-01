@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
 .logo {
   height: 6em;
@@ -351,8 +352,8 @@ footer {
   margin-top: 5px; /* pull up to overlap design */
   left: 0;
   bottom: 0;
-  width: 99.5vw; /*add this to make full width*/
-  margin-left: calc(-50vw + 50%);
+  width: 99.5vw; /*added this to make full width*/
+  margin-left: calc(-50vw + 50%);/*centering trick*/
   background-color: #0B7A75;
   color: white;
   text-align: center;
@@ -402,10 +403,10 @@ body {
   position: fixed;  
   top: 0;
   left: 0;
-  width: 87%;    
+  width: 86.7%;    
   z-index: 10;
   height: 70px;        /* smaller height */
-    padding: 5px 10px;    
+  padding: 5px 10px;    
   box-shadow: #10e4da 0px 12px 20px -10px;
 
 }
